@@ -4,6 +4,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; /* Isso ajuda muito a evitar vazamentos de tamanho */
 }
 
 body {
@@ -11,7 +12,9 @@ body {
         color: rgb(177, 133, 83);
         font-family: "Share Tech", sans-serif;
         font-weight: 1000;
-        z-index: 1;
+        /* Remova o z-index: 1; daqui. O body não precisa de z-index. */
+        margin: 0; /* Garanta que o body encoste nas bordas da tela */
+        padding: 0;
 }
 
 header {
@@ -20,11 +23,12 @@ header {
         text-align: center;
         color: rgb(243, 230, 220);
         font-family: "Pixelify Sans", sans-serif;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 100;
+        
+        position: fixed; /* Prega na tela */
+        top: 0; /* No teto */
+        left: 0; /* Na esquerda */
+        width: 100%; /* Estica tudo */
+        z-index: 1000; /* Use um valor alto para garantir que fique por cima de TUDO */
 }
 
 main {
