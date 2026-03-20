@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Quiz inicial">
+        <meta nme="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz DevWeb</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Quiz interativo para programadores</h1>
+            <p>Teste seus conhecimentos em programação!</p>
+        
+        </header>
+           <main>
+               <section>
+                    <h2>Sobre este Quiz!</h2>
+                    <p>Este é um <strong>quiz</strong> feito para testar seu conhecimento em programação, com diferentes niveis de perguntas</p>
+                    <p>Você poderá encontar alguns acrônimos, como <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr> que são comumente usados em questõs de DevWeb</p>
+               </section>
+              <section>
+                <h2>Pergunta 1: Qual linguagem é utilizada para fazer estruturas de páginas Web?</h2>
+                <form method="post">
+                    <input type="radio" value="Python" id="p1a" name="pergunta1"> 
+                        <label for="p1a">Python</label><br>
+                    <input type="radio" value="JavaScript" id="p1b" name="pergunta1">
+                        <label for="p1b">JavaScript</label><br>
+                    <input type="radio" value="CSS" id="p1c" name="pergunta1">
+                        <label for="p1c">CSS</label><br>
+                    <input type="radio" value="HTML" id="p1d" name="pergunta1">
+                        <label for="p1d">HTML</label><br>
+                    
+                </form>
+              </section>
+              <section>
+                     <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o _______ </h2>
+                 <form method="post">
+                     <input type="text" id="p2" name="pegunta2" placeholder="Digite sua resposta aqui..."><br><br>
+                     
+                 </form>
+              </section>
+              <section>
+                    <h2>Pergunta 3: Escreva um exemplo forte de senha:</h2>
+                    <form>
+                        <input type="password" id="senha1" placeholder="Digite sua senha" ><br><br>
+                      
+                    </form>
+              </section>
+              <section>
+                <h2>Pergunta 4: Em que ano o HTML lançou sua primeira versão? </h2>
+                <form method="post">
+                    <input type="date" id="data1" name="data1"><br><br>
+                    
+                </form>
+              </section>
+              <section>
+                <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+               <form method="post">
+                <input type="checkbox" value="HTML" id="p5a" name="pergunta5">
+                    <label for="p5a">HTML</label>
+                <input type="checkbox" value="Assembly" id="p5b" name="pergunta5">
+                    <label for="p5b">Assembly</label>
+                <input type="checkbox" value="React" id="p5c" name="pergunta5">
+                    <label for="p5c">React</label>
+                <input type="checkbox" value="CSS" id="p5d" name="pergunta5">
+                    <label for="p5d">CSS</label><br><br>
+                    
+               </form>
+              </section>
+              <section>
+                <h2>Pergunta 6: Faça o upload de um arquivo contendo um código HTML</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+              </section>
+              <section>
+                <h2>Pergunta 7: Selecione o input do atributo que selecione o seu tipo</h2>
+                <form method="post">
+                    <select name="pergunta7" id="p7">
+                        <option value="id">ID</option>
+                        <option value="name">Name</option>
+                        <option value="type">Type</option>
+                        <option value="Placeholder">Placeholder</option>
+                    </select>
+                </form>
+              </section>
+              <section>
+                <h2>Pergunta 8: Qual linguagem de programação é representada pela imagem abaixo?</h2>
+                <figure><img src="./assets/pyth.jpg" alt="Logotipo Python" width=250px">
+                    <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+                </figure>
+                    <form>
+                      <input type="text" id="p8" name="pergunta8" placeholder="Digite aqui...">
+                    </form>
+              </section>
+              <section>
+                    <form method="post">
+                        <h2> Pergunta 9: Qual seletor CSS é utilizado para aplicar uma regra de estilo
+                                (como zerar magens e bordas) a absolutamente todos os elementos da página de uma só vez?</h2>
+
+                            <input type="radio" value="body" id="p9a" name="pergunta9">
+                                    <label for="p9a">body</label>
+                            <input type="radio" value=".all" id="p9b" name="pergunta9">
+                                    <label for="p9b">.all</label>
+                             <input type="radio" value="*" id="p9c" name="pergunta9">
+                                <label for="p9c">*</label>
+                             <input type="radio" value="#global" id="p9d" name="pergunta9">
+                                    <label for="p9d">#global</label>
+                    </form>
+              </section>
+              
+                <section>
+                <h2>Pergunta 10: Qual tag HTML é usada para importar um arquivo CSS externo?</h2>
+                <form method="post">
+                    <input type="text" id="p10" placeholder="Ex: <tag>">
+                </form>
+              
+              </section>
+
+              <section>
+                <form>
+                    <button id="btnVerificar">✅ Ver Resultado</button>
+                </form>
+              </section>
+
+              <section>
+                    <h2>Tabela de Pontuação</h2>
+                    <table border="1">
+                       <thead>
+                            <tr>
+                                <th>Pontuação</th>
+                                <th>Avaliação</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td>0-2</td>
+                                <td>Não desista, caminhe um passo de cada vez e melhore na próxima!</td>
+                            </tr>
+                            <tr>
+                                <td>2-4</td>
+                                <td>Não desista, caminhe mais um pouco e melhore na próxima!</td>
+                            </tr>
+                            <tr>
+                                <td>4-6</td>
+                                <td>Não desista, você está quase lá!</td>
+                            </tr>
+                            <tr>
+                                <td>6-8</td>
+                                <td>Ótima pontuação, está quase lá!</td>
+                            </tr>
+                            <tr>
+                                <td>8-10</td>
+                                <td>Perfeito, você chegou lá!</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Boa sorte na sua jornada! Visualize sua pontuação!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                <section>
+                    <h2>Visualize suas respostas!</h2>
+                    <details>
+                        <summary>Clique aqui para ver suas respostas!</summary>
+                        <ol>
+                            <li>HTML</li>
+                            <li>Domínio</li>
+                            <li>Vini123#@!...</li>
+                            <li>1991</li>
+                            <li>Assembly</li>
+                            <li>Arquivo deve ter extensão .html</li>
+                            <li>Type</li>
+                            <li>Python</li>
+                        </ol>
+                    </details>
+                <section>
+                    <h2></strong>Nos dê seu Feedback!</strong></h2>
+                    <form method="post">
+                            <fieldset>
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="name" name="formulario" placeholder="Digite seu nome aqui!"><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui!"><br>
+                                <label for="Cell">Cell:</label>
+                                <input type="tel" id="Cell" name="Cell" placeholder="Digite seu número aqui!"><br>
+                                <label for="comentarios">Comentários:</label><br>
+                                <textarea id="comentarios" name="comentarios" rows="8" cols="30"" placeholder="Deixe seu Feedback aqui..."></textarea>
+                                <button type="button" onclick="alert('Feedback Enviado!')">Envie o seu Feedback</button>
+                            </fieldset>
+                    </form>
+
+                </section>
+            </main>
+         <footer class="paragrafo-footer">
+            <p><strong>&copy Quiz de programação. Todos os direitos reservados.</strong></p>
+            <p>Para mais informações do autor, <a href="https://github.com/ViniciusDurand/ViniciusDurand" target="_blank">clique aqui.</a></p>
+        </footer>
+        
+            <script>
+        // O Cofre de Respostas Exatas (Gabarito)
+        const gabarito = {
+            pergunta1: "HTML",
+            pergunta5: "Assembly", // A única linguagem de programação das opções
+            pergunta7: "type",
+            pergunta9: "*",
+            pergunta10: "<link>"
+        };
+
+        // O Evento do Botão
+        document.querySelector("#btnVerificar").addEventListener("click", function(event) {
+            // Evita que a página recarregue ao clicar no botão
+            event.preventDefault(); 
+            
+            let pontos = 0;
+            let resultado = "";
+
+            // --- P1 (Radio) ---
+            const r1 = document.querySelector('input[name="pergunta1"]:checked');
+            if (r1 && r1.value === gabarito.pergunta1) {
+                pontos++; resultado += "✅ P1: Correta!\n";
+            } else { resultado += "❌ P1: Errada! Resposta: HTML\n"; }
+
+            // --- P2 (Texto Livre) ---
+            const r2 = document.querySelector('#p2').value.toLowerCase().trim();
+            if (r2 === "domínio" || r2 === "dominio") {
+                pontos++; resultado += "✅ P2: Correta!\n";
+            } else { resultado += "❌ P2: Errada! Resposta: Domínio\n"; }
+
+            // --- P3 (Senha Forte) ---
+            const r3 = document.querySelector('#senha1').value.trim();
+            if (r3.length >= 8) { // Regra: Pelo menos 8 caracteres
+                pontos++; resultado += "✅ P3: Correta!\n";
+            } else { resultado += "❌ P3: Errada! Senha muito curta (mínimo 8).\n"; }
+
+            // --- P4 (Data) ---
+            const r4 = document.querySelector('#data1').value;
+            // A data do input type="date" vem no formato "YYYY-MM-DD"
+            if (r4.startsWith("1991")) {
+                pontos++; resultado += "✅ P4: Correta!\n";
+            } else { resultado += "❌ P4: Errada! O ano correto é 1991.\n"; }
+
+            // --- P5 (Checkbox) ---
+            const r5 = document.querySelector('#p5b'); // Pega direto o ID do Assembly
+            // Verifica se o Assembly está marcado e garante que os outros não estejam
+            if (r5.checked) {
+                pontos++; resultado += "✅ P5: Correta!\n";
+            } else { resultado += "❌ P5: Errada! Resposta: Assembly\n"; }
+
+            // --- P6 (Upload de Arquivo) ---
+            const r6 = document.querySelector('#p6').files[0];
+            // Verifica se tem arquivo E se o nome termina com .html
+            if (r6 && r6.name.toLowerCase().endsWith(".html")) {
+                pontos++; resultado += "✅ P6: Correta!\n";
+            } else { resultado += "❌ P6: Errada! Precisa ser um arquivo .html\n"; }
+
+            // --- P7 (Select / Option) ---
+            const r7 = document.querySelector('#p7').value.toLowerCase();
+            if (r7 === gabarito.pergunta7) {
+                pontos++; resultado += "✅ P7: Correta!\n";
+            } else { resultado += "❌ P7: Errada! Resposta: Type\n"; }
+
+            // --- P8 (Imagem / Texto) ---
+            const r8 = document.querySelector('#p8').value.toLowerCase().trim();
+            if (r8 === "python") {
+                pontos++; resultado += "✅ P8: Correta!\n";
+            } else { resultado += "❌ P8: Errada! Resposta: Python\n"; }
+
+            // --- P9 (Radio) ---
+            const r9 = document.querySelector('input[name="pergunta9"]:checked');
+            if (r9 && r9.value === gabarito.pergunta9) {
+                pontos++; resultado += "✅ P9: Correta!\n";
+            } else { resultado += "❌ P9: Errada! Resposta: *\n"; }
+
+            // --- P10 (Texto - A nova pergunta) ---
+            const r10 = document.querySelector('#p10').value.toLowerCase().trim();
+            if (r10 === gabarito.pergunta10 || r10 === "link") {
+                pontos++; resultado += "✅ P10: Correta!\n";
+            } else { resultado += "❌ P10: Errada! Resposta: <link>\n"; }
+
+            // --- ALERTA FINAL COM A NOTA ---
+            alert("📝 RESUMO DO SEU TESTE:\n\n" + resultado + "\n🎯 PONTUAÇÃO FINAL: " + pontos + "/10");
+        });
+    
+        </script>
+
+    </body>
+</html>

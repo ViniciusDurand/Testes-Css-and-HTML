@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Share+Tech&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+        background-color: hwb(41 89% 4%);
+        color: rgb(177, 133, 83);
+        font-family: "Share Tech", sans-serif;
+        font-weight: 1000;
+        z-index: 1;
+}
+
+header {
+        padding: 32px;
+        background-color: #a06308;
+        text-align: center;
+        color: rgb(243, 230, 220);
+        font-family: "Pixelify Sans", sans-serif;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+}
+
+main {
+        padding: 10px;
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+}
+
+h2 {
+        color:  rgb(165, 102, 102);
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #ee7759;
+    width: 16px;
+    height: 16px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+        width: 20%;
+        padding: 10px;
+        border: 2px solid #ee7759;
+        outline: none;
+        border-radius: 50px;
+}
+
+input[type="password"] {
+        width: 20%;
+        padding: 10px;
+        border: 2px solid #ee7759;
+        outline: none;
+        border-radius: 50px;
+}
+
+input::placeholder {
+        font-family: "Pixelify Sans", sans-serif;
+        
+}
+
+img {
+    border-radius: 30px;
+}
+
+textarea {
+        width: 30%;
+        padding: 10px;
+        border: 2px solid #ee7759;
+        outline: none;
+        border-radius: 20px;
+        font-family: "Share Tech", sans-serif; 
+}
+
+input[type="file"] {
+        font-family: "Share Tech", sans-serif;
+        color: rgb(255, 30, 0);
+}
+
+select {
+        font-family: "Share Tech", sans-serif;
+        cursor: pointer;
+}
+
+input[type="date"] {
+        font-family: "Share Tech", sans-serif;
+        border: solid 2px #ee7759;
+        border-radius: 20px;
+}
+
+table {
+        border-collapse: collapse;
+        width: 30%;
+        font-family: "Share Tech", sans-serif;
+}
+
+th {
+        background-color: #cddf2d;
+        color: black;
+        padding: 5px;
+        font-family: "Share Tech", sans-serif;
+        text-align: center;
+}
+
+td {
+        padding: 5px;
+        color: black;
+        font-family: "Share Tech", sans-serif;
+        text-align: center;
+
+}
+
+details {
+        background-color: #eea159;
+        border-radius: 10px;
+        padding: 5px;
+}
+
+summary {
+        cursor:pointer;
+        color: #b47474;
+}
+
+ol {
+        margin: 5px;
+        padding: 10px;
+}
+
+fieldset {
+        border: solid 2px #ee7759;    
+        border-radius: 10px;
+        padding: 10px;
+}
+
+button {
+        background-color: #eea159;
+        border-radius: 5px;
+        padding: 8px;
+        font-family: "Share Tech", sans-serif;
+        color: #b47474; 
+}
+
+.paragrafo-footer {
+        font-family: "Pixelify Sans", sans-serif;
+}
+
+/* Isso garante que imagens (como a do Python) nunca vazem da tela */
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* O Interruptor Mágico: Só funciona em telas menores que 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Tira as margens gigantes laterais */
+    }
+    
+    section {
+        width: 100%; /* Faz a caixa branca da pergunta ocupar a tela toda */
+        margin-bottom: 20px; /* Dá um respiro entre uma pergunta e outra */
+    }
+
+    button {
+        width: 100%; /* Estica o botão de uma ponta à outra */
+        padding: 15px; /* Deixa o botão mais alto para o clique do dedo */
+        font-size: 18px; /* Aumenta a letra do botão */
+    }
+    
+    /* Se a tabela de pontuação ficar muito apertada, isso permite rolar ela pro lado */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
